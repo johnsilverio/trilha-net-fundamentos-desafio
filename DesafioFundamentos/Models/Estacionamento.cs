@@ -1,4 +1,6 @@
 namespace DesafioFundamentos.Models
+// Desafio realizado no dia 02/05/2023 por John Silverio 
+// https://github.com/johnsilverio/trilha-net-fundamentos-desafio.git
 {
     public class Estacionamento
     {
@@ -15,7 +17,7 @@ namespace DesafioFundamentos.Models
         public void AdicionarVeiculo()
         {
             // TODO: Pedir para o usuário digitar uma placa (ReadLine) e adicionar na lista "veiculos"
-            // *IMPLEMENTE AQUI*
+            // *IMPLEMENTE AQUI* -- Implementado
             Console.WriteLine("Digite a placa do veículo para estacionar:");
             string placa = Console.ReadLine();
             veiculos.Add(placa);
@@ -26,7 +28,7 @@ namespace DesafioFundamentos.Models
             Console.WriteLine("Digite a placa do veículo para remover:");
 
             // Pedir para o usuário digitar a placa e armazenar na variável placa
-            // *IMPLEMENTE AQUI*
+            // *IMPLEMENTE AQUI* -- Implementado
             string placa = Console.ReadLine();
 
             // Verifica se o veículo existe
@@ -36,12 +38,12 @@ namespace DesafioFundamentos.Models
 
                 // TODO: Pedir para o usuário digitar a quantidade de horas que o veículo permaneceu estacionado,
                 // TODO: Realizar o seguinte cálculo: "precoInicial + precoPorHora * horas" para a variável valorTotal                
-                // *IMPLEMENTE AQUI*
+                // *IMPLEMENTE AQUI* -- Implementado
                 int horas = Convert.ToInt32(Console.ReadLine());
                 decimal valorTotal = precoInicial + precoPorHora * horas; 
 
                 // TODO: Remover a placa digitada da lista de veículos
-                // *IMPLEMENTE AQUI*
+                // *IMPLEMENTE AQUI* -- Implementado
                 veiculos.Remove(placa);
                 Console.WriteLine($"O veículo {placa} foi removido e o preço total foi de: R$ {valorTotal}");
             }
@@ -58,7 +60,7 @@ namespace DesafioFundamentos.Models
             {
                 Console.WriteLine("Os veículos estacionados são:");
                 // TODO: Realizar um laço de repetição, exibindo os veículos estacionados
-                // *IMPLEMENTE AQUI*
+                // *IMPLEMENTE AQUI* -- Implementado
                 foreach (var veiculo in veiculos)
                 {
                     Console.WriteLine($"Placa: {veiculo}");

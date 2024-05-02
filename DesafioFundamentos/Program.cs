@@ -1,5 +1,8 @@
 ﻿using DesafioFundamentos.Models;
 
+// Desafio realizado no dia 02/05/2023 por John Silverio 
+// https://github.com/johnsilverio/trilha-net-fundamentos-desafio.git
+
 // Coloca o encoding para UTF8 para exibir acentuação
 Console.OutputEncoding = System.Text.Encoding.UTF8;
 
